@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1dede"
+    tools:context=".activities.AlertsTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <Spinner
+                android:id="@+id/sp_serialno"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:spinnerMode="dialog"
+                android:dropDownVerticalOffset="35dp"
+                android:background="@drawable/spin_bg"
+                android:prompt="@string/serials"/>
+
+            <Spinner
+                android:id="@+id/sp_Info"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:dropDownVerticalOffset="35dp"
+                android:background="@drawable/spin_bg"
+                android:prompt="@string/select_fix_inter"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <Spinner
+                android:id="@+id/sp_Alerttype"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:dropDownVerticalOffset="35dp"
+                android:background="@drawable/spin_bg"
+                android:prompt="@string/select_vehicle"/>
+
+            <Spinner
+                android:id="@+id/sp_vehRegNo"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                android:dropDownVerticalOffset="35dp"
+                android:background="@drawable/spin_bg"
+                android:prompt="@string/select_fix_inter"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/sp_Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:dropDownVerticalOffset="35dp"
+            android:background="@drawable/spin_bg"
+            android:prompt="@string/select_fix_inter"/>
+
+        <Button
+            android:id="@+id/btnAlerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_alerts"
+            android:padding="15dp"
+            android:cursorVisible="false"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/spinner_bg"
+            android:layout_margin="15dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

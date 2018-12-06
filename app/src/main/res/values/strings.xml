@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">GPS TELLER</string>
+    <string name="welcome_text">Welcome</string>
+
+    <string name="get_started">Get Started</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="password">Password</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_your_email_to_recover_your_password">Enter your email to recover your password</string>
+    <string name="this_is_how_you_ll_appear_on_your_map">This is how you\'ll appear on your map</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="your_group">Your Group</string>
+    <string name="join_a_group">Join a Group \n Enter your invite code</string>
+    <string name="get_the_code_from_your_circle_s_members">Get the code \n from your circle\'s members</string>
+    <string name="don_t_have_a_code">Don\'t have a code?</string>
+    <string name="create_a_new_group">Create a New Group</string>
+    <string name="we_ll_give_you_a_code_to_share">We\'ll give you a code to share</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="my_groups">MY GROUPS</string>
+    <string name="family">Family/Drivers/Business</string>
+    <string name="create_group">Create Group</string>
+    <string name="join_group">Join a Group</string>
+
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
+    <string name="google_api_key">AIzaSyAboQZkDSjBryAcBpl87xqUmgQNp7OhTsw</string>
+    <string name="add_work">Add Work</string>
+    <string name="gpsteller_driver_protect">GPSTELLER Driver Protect</string>
+    <string name="a_service_to_protect_your_loved_ones_on_the_road_see_phone_use_top_speed_and_more">
+        A service to protect your \nloved ones on the road.\n See phone use, top speed and more!
+    </string>
+    <string name="get_notified_when_someone_leaves_work">Get notified when \nsomeone leaves Work</string>
+    <string name="basic">Basic</string>
+    <string name="enter_your_invite_code">Enter your invite code</string>
+    <string name="group_for_everyone">Group for Everyone</string>
+    <string name="make_another_circle">Make another Circle for grandparents, workout buddies, carpools, or a vacation group. You choose who\'s in and when to share</string>
+    <string name="add_members_to_send_messages">Add Members to Send Messages</string>
+    <string name="at_least_one_member">At least one member needs to join your Circle to be able to chat.</string>
+    <string name="add_a_new_member">Add a New Member</string>
+    <string name="share_this">Share this invite code with the people you want in your Cirlce.</string>
+    <string name="thiscode">This code will be active for 2 days</string>
+    <string name="sendcode">Send Code</string>
+    <string name="done">Done</string>
+    <string name="add_emergency_contacts">Add Emergency Contacts</string>
+    <string name="if_anyone">If anyone in this Group needs help, we\'ll share their location
+     with everyone in the circle and the emergency contacts below.</string>
+    <string name="tap_above_to_send_a_helpalert">Tap above to send a HelpAlert</string>
+    <string name="my_location_sharing">My Location Sharing</string>
+    <string name="place_name">Place Name</string>
+    <string name="know_when_your_loved">Know when your loved ones arrive safely. Receive an alert after each
+    drive to monitor top speed, phone usage and other driving events.</string>
+    <string name="don_t_want">Don\'t want GPSTeller to log your own drives?
+        Toggle Drive Detection in Settings</string>
+    <string name="each_group">Each Group member must enable this feature for themselves
+    for their drives to appear</string>
+    <string name="please_note">Please note, you may see increased battery usage during drives</string>
+    <string name="your_drives_will">Your drives will not show on your profile
+    If you\'re a Driver Protect subscriber, Crash Detection will be disabled</string>
+
+    <string name="client_id_paypal">ATjUbzwQ3_vObuXXWSCzKEgBT-gBGfSVZLDuNe_Cnp764_v7X_3upCSexXXxtBL4yj13XZpgUiB5YTOr</string>
+    <string name="free_trial">7 Day Free Trial</string>
+    <string name="none">None</string>
+    <string name="paypal_intent_authorize">Authorize</string>
+    <string name="select_vehicle">Please select vehicle</string>
+    <string name="select_fix_inter">Select Fix Interval</string>
+    <string name="please_select_start_date_time">Please Select Start Date Time.</string>
+
+    <string name="select_group">Please select group</string>
+    <string name="get_alerts">Get Alerts</string>
+    <string name="serials">#</string>
+    <string name="group_name">Group name</string>
+    <string name="suggestes_group_names">Suggestes Group names</string>
+</resources>

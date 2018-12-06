@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="1"
+            android:layout_gravity=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Mon,12 Nov 2018 15:29:49"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Ignition Off"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="0.01"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Yaokrom, Yaokrom,GH"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:text="Show on Map"
+            android:gravity="center"
+            android:padding="3dp"
+            android:layout_margin="2dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp"
+            android:background="@drawable/round_layout_green"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

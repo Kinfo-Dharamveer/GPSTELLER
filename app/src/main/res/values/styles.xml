@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">false</item>
+    </style>
+
+    <style name="CustomTheme" parent="Theme.AppCompat.Light">
+
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="elevation">5dp</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextViewBold">
+        <item name="fontPath">fonts/Montserrat-Bold.ttf</item>
+    </style>
+
+
+
+
+    <style name="TextViewSemiBold">
+        <item name="fontPath">fonts/Montserrat-SemiBold.ttf</item>
+    </style>
+    <style name="TextViewRegular">
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+    <style name="TextViewMedium">
+        <item name="fontPath">fonts/Montserrat-Regular.ttf</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppDialogTheme"
+        parent="Theme.AppCompat.DayNight.Dialog.MinWidth"/>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">@dimen/_35sdp</item>
+        <item name="android:maxWidth">@dimen/_40sdp</item>
+        <item name="android:width">@dimen/_30sdp</item>
+    </style>
+
+
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please Wait</item>
+        <item name="DialogSpotColor">@color/rowbg</item>
+        <item name="DialogSpotCount">8</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+</resources>

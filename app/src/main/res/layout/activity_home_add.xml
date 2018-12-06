@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomeAddActivity">
+
+
+    <ImageView
+        android:id="@+id/mapImage"
+        android:src="@drawable/family"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp" />
+
+    <com.drivingschool.android.customviews.CustomTextView
+        android:id="@+id/text"
+        android:layout_below="@id/mapImage"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:textAppearance="@style/TextViewSemiBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/grey"
+        android:text="Sorry! You'll need to add at least one member to your account for Places to work."/>
+
+
+    <Button
+        android:id="@+id/txtInviteFamMem"
+        android:layout_below="@id/text"
+        android:text="Invite Family Members"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextViewBold"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#e1e0e0"/>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/txtRemovePla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Place"
+            android:padding="@dimen/_10sdp"
+            android:textColor="#ba1b1b"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#e1e0e0"/>
+    </LinearLayout>
+</RelativeLayout>

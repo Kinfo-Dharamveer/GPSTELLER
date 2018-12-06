@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imgBackAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_centerVertical="true"
+        android:tint="@color/blue"/>
+
+    <com.drivingschool.android.customviews.CustomTextView
+        android:id="@+id/toolbarTitle"
+        android:layout_toRightOf="@id/imgBackAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Place"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:padding="5dp"/>
+
+    <com.drivingschool.android.customviews.CustomTextView
+        android:id="@+id/txtSave"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/blue"
+        android:padding="@dimen/_10sdp"/>
+
+
+</RelativeLayout>
+

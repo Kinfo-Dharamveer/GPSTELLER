@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_30sdp"
+    android:background="@drawable/round_dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/green"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            >
+
+            <ImageView
+                android:id="@+id/imgStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_success"
+                android:tint="@color/white"
+                android:layout_gravity="center"
+
+                />
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Success"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/txtStatusMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Data saved successfully"
+            android:textSize="@dimen/_15sdp"
+            android:typeface="monospace" />
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/txtOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@color/brown"
+            android:typeface="serif"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="end"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

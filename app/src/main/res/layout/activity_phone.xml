@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".activities.PhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:background="@drawable/background" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/welcome_text"
+                android:textColor="@color/white"
+                android:alpha="0.5"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextViewBold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:padding="@dimen/_8sdp">
+
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                        app:ccp_textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:alpha="0.7"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <EditText
+                        android:id="@+id/edPhoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/enter_your_phone_number"
+                        android:inputType="number"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:id="@+id/txtNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:gravity="center"
+                android:textColor="@color/lightblack"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textAppearance="@style/TextViewBold"
+                android:background="@drawable/rounded_layout"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

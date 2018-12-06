@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateGroupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_30sdp">
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            />
+
+
+        
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/group_for_everyone"
+            android:textAppearance="@style/TextViewBold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/make_another_circle"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/txtAddGroup"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/rounded_layout"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="Add a Group"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

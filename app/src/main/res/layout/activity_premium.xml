@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:context=".activities.PremiumActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/btnCross"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/ic_clear"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_width="@dimen/_25sdp"
+        android:textStyle="bold"
+        />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="bottom"/>
+
+
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Basic">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_messages"
+                    android:icon="@drawable/ic_messages"
+                    android:title="Messages" />
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/ic_help"
+                    android:title="SOS" />
+                <item
+                    android:id="@+id/nav_premium"
+                    android:icon="@drawable/ic_premium"
+                    android:title="Premium"
+                    />
+                <item
+                    android:id="@+id/nav_locationsharing"
+                    android:icon="@drawable/ic_location"
+                    android:title="Location Sharing" />
+            </group>
+
+
+        </menu>
+    </item>
+
+
+    <group android:id="@+id/group_two">
+        <item android:title="Gps Teller Pro">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_alerts"
+                    android:icon="@drawable/ic_add_alert"
+                    android:title="Alerts" />
+
+                <item
+                    android:id="@+id/nav_reports"
+                    android:icon="@drawable/ic_reports"
+                    android:title="Reports" />
+
+                <item
+                    android:id="@+id/nav_places"
+                    android:icon="@drawable/ic_places"
+                    android:title="Places" />
+                <item
+                    android:id="@+id/nav_driving"
+                    android:icon="@drawable/ic_driving"
+                    android:title="Driving" />
+
+            </menu>
+
+        </item>
+    </group>
+
+    <group android:id="@+id/group_three">
+        <item android:title="Gps Teller Plus">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_pickupdelivery"
+                    android:icon="@drawable/ic_delivery"
+                    android:title="Pickup/Delivery Service" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/drawer_item_settings"
+            android:title="Settings"></item>
+
+        <item
+            android:id="@+id/drawer_item_share"
+            android:title="SharGPSTELLER"></item>
+
+    </group>
+
+
+</menu>

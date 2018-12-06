@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:gravity="center"
+    tools:context=".activities.ReportsButtonActivity">
+
+
+    <Button
+        android:id="@+id/btnSelectVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle"
+        android:background="@drawable/spinner_bg"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_17sdp"
+        />
+
+    <Button
+        android:layout_below="@id/btnSelectVehicle"
+        android:id="@+id/btnSelectGroup"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:background="@drawable/spinner_bg"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_17sdp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/payment"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS Teller Driver"
+                android:textSize="@dimen/_16sdp"
+                android:textAppearance="@style/TextViewBold"
+                />
+
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/free_trial"
+                android:textSize="@dimen/_14sdp"
+                android:textAppearance="@style/TextViewBold"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.drivingschool.android.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="After free Trial"
+                    android:textSize="@dimen/_16sdp"
+                    android:textAppearance="@style/TextViewBold"
+                    />
+
+                <com.drivingschool.android.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starting Nov 7,2018"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3200/year"
+                android:textSize="@dimen/_14sdp"
+                android:textAppearance="@style/TextViewBold"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/waiting_group"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:text="We are trying to contact Server to get Token ! Please wait..."
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/payment_group"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/grey"
+            android:textAppearance="@style/TextViewBold"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp">
+
+
+            <EditText
+                android:id="@+id/edt_amount"
+                android:hint="Choose the amount to pay (in USD)"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/round_layout_green"
+            android:text="PAY"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextViewBold"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+
+
+       <ImageButton
+            android:id="@+id/btn_paypal"
+           android:src="@drawable/paypal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/round_lay_grey"
+            android:text="Pay Pal"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextViewBold"
+           android:layout_marginRight="@dimen/_30sdp"
+           android:layout_marginLeft="@dimen/_30sdp"
+           android:layout_marginTop="@dimen/_22sdp"            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

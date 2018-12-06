@@ -1,0 +1,94 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DateTimeActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calendar"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+          >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT DATE"
+                android:id="@+id/btn_date"
+                />
+
+            <EditText
+                android:layout_toRightOf="@id/btn_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_date"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+             />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT TIME"
+                android:id="@+id/btn_time"
+                />
+            <EditText
+                android:layout_toRightOf="@id/btn_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_time"
+                android:gravity="center"
+               />
+
+
+        </RelativeLayout>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/txtReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_25sdp"
+            android:background="@drawable/rounded_layout"
+            android:gravity="center"
+            android:backgroundTint="@color/blue"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_8sdp"
+            android:text="Get Reports"
+            android:textAppearance="@style/TextViewBold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+</RelativeLayout>

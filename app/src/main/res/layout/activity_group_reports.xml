@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1dede"
+    tools:context=".activities.GroupReportsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <Spinner
+            android:id="@+id/spin_selectGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:dropDownVerticalOffset="35dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/spin_bg"
+            android:prompt="@string/select_group"/>
+
+        <Spinner
+            android:id="@+id/spin_selectFix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:dropDownVerticalOffset="35dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/spin_bg"
+            android:prompt="@string/select_fix_inter"/>
+
+
+        <Spinner
+            android:id="@+id/spin_ReportType"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:dropDownVerticalOffset="35dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/spin_bg"
+            android:layout_height="wrap_content"
+            />
+
+
+        <Spinner
+            android:id="@+id/spin_HTMLReport"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:dropDownVerticalOffset="35dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/spin_bg"
+            android:layout_height="wrap_content"
+            />
+
+
+        <EditText
+            android:id="@+id/stTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:focusable="false"
+            android:layout_margin="15dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:textIsSelectable="true"
+            android:inputType="date"
+            android:background="@drawable/spinner_bg"
+            android:hint="@string/please_select_start_date_time"
+            />
+
+        <EditText
+            android:id="@+id/eTime"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:textIsSelectable="true"
+            android:inputType="date"
+            android:background="@drawable/spinner_bg"
+            android:hint="Please Select End Date Time."
+            />
+
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Report"
+            android:padding="15dp"
+            android:cursorVisible="false"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/spinner_bg"
+            android:layout_margin="15dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

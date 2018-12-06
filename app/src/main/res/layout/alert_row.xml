@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/tv_serial"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/tvCat"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/tv_type"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Package Expired"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/tv_vehicle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Excavator Yaw"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/tv_time"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Mon, 12 Nov 2018 09:30:00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:text="Delete"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/_10sdp"
+            android:background="@drawable/round_layout_green"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

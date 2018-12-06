@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.JoinGroupActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_30sdp">
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/enter_your_invite_code"
+                android:textAppearance="@style/TextViewBold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinViewJoin"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:itemCount="5"
+                app:itemRadius="@dimen/pv_pin_view_item_radius" />
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_family"
+                android:gravity="center"
+                android:text="Ask the Group creator for their code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:id="@+id/txtSubmit"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/rounded_layout"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</FrameLayout>

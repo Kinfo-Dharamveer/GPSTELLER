@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AlertsActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_serial"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="#"
+            fontPath="fonts/Montserrat-Bold.ttf"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tvCat"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="Alert Category"
+            android:gravity="center"
+            fontPath="fonts/Montserrat-Bold.ttf"
+            android:textAppearance="@style/TextViewBold"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Alert Type"
+            android:gravity="center"
+            android:textAppearance="@style/TextViewBold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tv_vehicle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextViewBold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Reg. No"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textAppearance="@style/TextViewBold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:textAppearance="@style/TextViewBold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#aca9a9"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/line"
+        android:padding="5dp"
+        android:id="@+id/recyc_Alerts"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

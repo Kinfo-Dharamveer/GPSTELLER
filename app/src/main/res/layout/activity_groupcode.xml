@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activities.GroupcodeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:background="@drawable/background" />
+
+
+        <com.drivingschool.android.customviews.CustomTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/your_group"
+            android:textAppearance="@style/TextViewBold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/text"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/join_a_group"
+                android:textAppearance="@style/TextViewMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:textColor="@color/white"
+                app:itemCount="5"
+                app:itemRadius="@dimen/pv_pin_view_item_radius" />
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/ic_family"
+                android:gravity="center"
+                android:text="@string/get_the_code_from_your_circle_s_members"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:id="@+id/txtSubmit"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/rounded_layout"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:background="@color/darkgray"/>
+
+                <com.drivingschool.android.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textAppearance="@style/TextViewBold"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/circle_border"
+                    android:textColor="@color/grey"/>
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:background="@color/darkgray"/>
+
+            </LinearLayout>
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/don_t_have_a_code"
+                android:textAppearance="@style/TextViewMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:id="@+id/txtNewcircle"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bg"
+                android:padding="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black"
+                android:text="@string/create_a_new_group"/>
+
+
+            <com.drivingschool.android.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_thumbs"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/we_ll_give_you_a_code_to_share"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
